@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        title Add to cart
+
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css")
+        link(rel="stylesheet", href="style.css")
+    body
+        .container
+            br
+            br
+            br
+            br
+
+            h1
+                | Products
+                div(style="float: right; cursor: pointer;")
+                    span.glyphicon.glyphicon-shopping-cart.my-cart-icon
+                        span.badge.badge-notify.my-cart-badge
+
+            button(type="addNewProduct" name="addNewProduct" id="addNewProduct")
+                | Add New Product
+            
+            br
+            br
+            br
+
+            .row
+                .col-md-3.text-center
+                    img(src="img/img_1.png", width="270" height="270" alt="")
+                    br
+                    br
+                    | Product 1 -
+                    strong $10
+                    br
+                    br
+
+                    button(class="btn btn-danger my-cart-btn" data-id="2" data-name="product 1"
+                           data-summary="summary 1" data-price="10" data-quantity="1"
+                           data-image="img/img_1.png")
+                           | Add to cart
+                    
+                    a(href="" class="btn btn-info") Details
+
+                .col-md-3.text-center
+                    img(src="img/img_2.png", width="270" height="270" alt="")
+                    br
+                    br
+                    | Product 2 -
+                    strong $20
+                    br
+                    br
+
+                    button(class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2"
+                           data-summary="summary 2" data-price="20" data-quantity="1"
+                           data-image="img/img_2.png")
+                           | Add to cart
+                    
+                    a(href="" class="btn btn-info") Details
+                
+                .col-md-3.text-center
+                    img(src="img/img_3.png", width="270" height="270" alt="")
+                    br
+                    br
+                    | Product 3 -
+                    strong $30
+                    br
+                    br
+
+                    button(class="btn btn-danger my-cart-btn" data-id="3" data-name="product 3"
+                           data-summary="summary 3" data-price="30" data-quantity="1"
+                           data-image="img/img_3.png")
+                           | Add to cart
+                    
+                    a(href="" class="btn btn-info") Details
+                
+                .col-md-3.text-center
+                    img(src="img/img_4.png", width="270" height="270" alt="")
+                    br
+                    br
+                    | Product 4 -
+                    strong $40
+                    br
+                    br
+
+                    button(class="btn btn-danger my-cart-btn" data-id="4" data-name="product 4"
+                           data-summary="summary 4" data-price="40" data-quantity="4"
+                           data-image="img/img_4.png")
+                           | Add to cart
+                    
+                    a(href="" class="btn btn-info") Details
+
+        script(src="https://code.jquery.com/jquery-2.2.4.min.js")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js")
+        script(src="js/jquery.mycart.js")
+        script(src="js/cart.js")
